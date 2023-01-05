@@ -1,0 +1,337 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Farben: #2B2C2E /  #9FA2A7 / #27282A /  #848689 / #3D3E41 / #fff */
+
+@font-face {
+  font-family: "Graphik";
+  src: url("../fonts/Graphik-Regular.woff");
+}
+
+@font-face {
+  font-family: "Graphik Medium";
+  src: url("../fonts/Graphik-Medium.ttf");
+}
+
+@font-face {
+  font-family: "TiemposHeadline";
+  src: url("../fonts/TiemposHeadline-Semibold.woff");
+}
+
+@font-face {
+  font-family: Theinhardt;
+  src: url("../fonts/Theinhardt-Lt.woff");
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+.hero-text article p,
+.deliverables article p,
+.critique p,
+.instructions {
+  font-family: Theinhardt;
+}
+
+.btn,
+.hero-text,
+.critique article p,
+.deliverables article h4,
+footer {
+  font-family: "Graphik Medium";
+}
+
+header nav a,
+h1,
+.hero-text article span {
+  font-family: "Graphik";
+}
+
+.logo,
+h2 {
+  font-family: "TiemposHeadline";
+}
+
+.hero-text p,
+.hero-text article p,
+.deliverables article p {
+  font-size: 1.3rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ==== HEADER ==== */
+
+.logo {
+  font-size: 1.5rem;
+  color: #2b2c2e;
+}
+
+h2 {
+  margin-bottom: 2vh;
+  color: #27282a;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 2vh 7vw;
+}
+
+header nav a {
+  margin-right: 1.5vw;
+  font-size: 0.8rem;
+  color: #2b2c2e;
+}
+
+.btn {
+  border: 2px solid #48494c;
+  border-radius: 3px;
+  padding: 1vh 3vw;
+  color: #3d3e41;
+}
+
+.btn:hover {
+  color: white;
+  background-color: #3d3e41;
+}
+
+/* ==== HERO ==== */
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  padding-inline: 5vw;
+}
+
+.hero {
+  margin-block: 5vh 20vh;
+}
+
+.hero img {
+  width: 100vw;
+}
+
+/* ==== MAIN ==== */
+
+main {
+  padding-inline: 7vw;
+}
+
+.hero-text {
+  display: flex;
+  gap: 5vw;
+  margin-block: 2vh 25vh;
+  color: #2b2c2e;
+}
+
+.hero-text p {
+  line-height: 2rem;
+  width: 54vw;
+}
+
+.hero-text article span {
+  font-size: 3.5rem;
+}
+
+.hero-text article p {
+  width: 15vw;
+  line-height: 1.3rem;
+  margin-top: 2vh;
+  color: #9fa2a7;
+}
+
+/* ==== Deliverables ==== */
+
+.deliverables {
+  display: flex;
+  align-items: flex-start;
+  gap: 2vw;
+}
+
+.deliverables img {
+  width: 40vw;
+}
+
+/* ===Article=== */
+
+.deliverables article {
+  width: 42vw;
+}
+
+.deliverables article h2 {
+  line-height: 4rem;
+  margin-bottom: 8vh;
+}
+
+.deliverables article h4 {
+  font-size: 1.4rem;
+  margin-block: 3vh;
+}
+
+.deliverables article p {
+  color: #848689;
+  line-height: 1.7rem;
+}
+
+/* ==== HOW IT WORKS==== */
+
+.instructions {
+  background: #f1f1f4 url("../img/home_how_it_works.png") right/49% no-repeat;
+  margin-top: 15vh;
+  padding: 8vh 5vw;
+  font-size: 1.2rem;
+  color: #848689;
+}
+
+.instructions article {
+  margin-bottom: 2vh;
+}
+
+.instructions article ol {
+  list-style-position: outside;
+  margin-left: 2.5rem;
+  color: #848689;
+}
+
+.instructions article {
+  width: 37vw;
+}
+
+.instructions img {
+  width: 40%;
+}
+/* ==== Critique ==== */
+
+.critique {
+  margin-block: 15vh 25vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.critique h2 {
+  text-align: center;
+}
+
+.critique p {
+  text-align: center;
+  line-height: 2rem;
+  font-size: 1rem;
+  color: #9fa2a7;
+}
+
+.critique .background {
+  margin-top: 15vh;
+  width: 100vw;
+}
+
+.critique article {
+  width: 100%;
+  padding-left: 15vw;
+  position: relative;
+}
+
+.critique article p {
+  transform: translateY(-1vh);
+  width: 31vw;
+  text-align: left;
+  font-size: 1.2rem;
+  line-height: 2.4rem;
+}
+
+.critique article img {
+  width: 44vw;
+  position: absolute;
+  right: -5px;
+  top: -80px;
+}
+
+/* ====FOOTER==== */
+
+footer {
+  margin: 0 7vw;
+  padding-block: 10vh 5vh;
+  text-align: center;
+  border-top: 1px solid #9fa2a7;
+  color: #9fa2a7;
+}
+
+footer article {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-top: 5vh;
+}
+
+footer a {
+  color: #2b2c2e;
+}
+
+footer img {
+  width: 7vw;
+  text-align: left;
+}
+
+@media only screen and (max-width: 768px) {
+  .instructions {
+    background-position: top;
+    background-size: 60%;
+    padding-top: 45vh;
+  }
+
+  .instructions article,
+  .critique p,
+  .deliverables img,
+  .deliverables article {
+    width: 100%;
+  }
+
+  .critique article p {
+    margin-top: 6vh;
+    width: 100%;
+  }
+
+  .critique article {
+    padding-left: 0;
+  }
+
+  .deliverables {
+    flex-direction: column;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (max-width: 475px) {
+  .instructions {
+    background-size: 100%;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .logo,
+  .hero-text p {
+    font-size: 1rem;
+  }
+
+  .btn,
+  header nav a {
+    font-size: 0.6rem;
+  }
+}
