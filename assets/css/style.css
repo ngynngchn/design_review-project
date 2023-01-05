@@ -41,14 +41,19 @@ h2 {
   color: var(--h2-color);
 }
 
+.impact-font {
+  font-family: "Graphik Medium";
+}
+
 /* nav &  title font */
 header nav a,
-h1 {
+.hero h1,
+.hero-text .price {
   font-family: "Graphik";
 }
 
 /* headline & logo font */
-.logo,
+header .logo,
 h2 {
   font-family: "TiemposHeadline";
 }
@@ -87,7 +92,6 @@ header .btn {
   border-radius: 3px;
   padding: 0.5vh 3vw;
   color: #3d3e41;
-  font-family: "Graphik Medium";
 }
 
 header .btn:hover {
@@ -124,7 +128,6 @@ header .btn:hover {
 .hero-text p {
   line-height: 2rem;
   width: 54vw;
-  font-family: "Graphik Medium";
   font-size: 1.3rem;
 }
 
@@ -132,7 +135,6 @@ header .btn:hover {
   width: 15vw;
   line-height: 1.3rem;
   color: var(--text-color);
-  font-family: "Graphik";
   font-size: 1.2rem;
 }
 
@@ -167,7 +169,6 @@ header .btn:hover {
 
 .deliverables article h3 {
   margin-block: 1.5vw;
-  font-family: "Graphik Medium";
   font-size: 1.4rem;
 }
 
@@ -234,7 +235,6 @@ header .btn:hover {
   min-width: 350px;
   text-align: left;
   line-height: 2.4rem;
-  font-family: "Graphik Medium";
   font-size: 1.2rem;
 }
 
@@ -259,7 +259,6 @@ footer article {
   justify-content: center;
   align-items: flex-end;
   margin-top: 5vh;
-  font-family: "Graphik Medium";
 }
 
 footer img {
