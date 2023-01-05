@@ -2,9 +2,14 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: Theinhardt;
 }
 
-/* Farben: #2B2C2E /  #9FA2A7 / #27282A /  #848689 / #3D3E41 / #fff */
+:root {
+  --text-color: #9fa2a7;
+  --impact-color: #2b2c2e;
+  --h2-color: #27282a;
+}
 
 @font-face {
   font-family: "Graphik";
@@ -26,57 +31,39 @@
   src: url("../fonts/Theinhardt-Lt.woff");
 }
 
+body {
+  max-width: 1440px;
+}
+
 h2 {
   font-size: 3.5rem;
+  margin-bottom: 2vh;
+  color: var(--h2-color);
 }
 
-.hero-text article p,
-.deliverables article p,
-.critique p,
-.instructions {
-  font-family: Theinhardt;
-}
-
-.btn,
-.hero-text,
-.critique article p,
-.deliverables article h4,
-footer {
-  font-family: "Graphik Medium";
-}
-
+/* nav &  title font */
 header nav a,
-h1,
-.hero-text article span {
+h1 {
   font-family: "Graphik";
 }
 
+/* headline & logo font */
 .logo,
 h2 {
   font-family: "TiemposHeadline";
 }
 
-.hero-text p,
-.hero-text article p,
-.deliverables article p {
-  font-size: 1.3rem;
-}
-
 a {
   text-decoration: none;
+  color: var(--impact-color);
+}
+
+main,
+footer {
+  margin-inline: 7vw;
 }
 
 /* ==== HEADER ==== */
-
-.logo {
-  font-size: 1.5rem;
-  color: #2b2c2e;
-}
-
-h2 {
-  margin-bottom: 2vh;
-  color: #27282a;
-}
 
 header {
   display: flex;
@@ -88,148 +75,150 @@ header {
 header nav a {
   margin-right: 1.5vw;
   font-size: 0.8rem;
-  color: #2b2c2e;
 }
 
-.btn {
+header .logo {
+  color: var(--impact-color);
+  font-size: 1.5rem;
+}
+
+header .btn {
   border: 2px solid #48494c;
   border-radius: 3px;
-  padding: 1vh 3vw;
+  padding: 0.5vh 3vw;
   color: #3d3e41;
+  font-family: "Graphik Medium";
 }
 
-.btn:hover {
-  color: white;
+header .btn:hover {
   background-color: #3d3e41;
+  color: white;
 }
 
 /* ==== HERO ==== */
-
-h1 {
-  text-align: center;
-  font-size: 2.5rem;
-  padding-inline: 5vw;
-}
 
 .hero {
   margin-block: 5vh 20vh;
 }
 
+.hero h1 {
+  text-align: center;
+  padding-inline: 5vw;
+  font-size: 2.5rem;
+}
+
 .hero img {
-  width: 100vw;
+  width: 100%;
 }
 
 /* ==== MAIN ==== */
 
-main {
-  padding-inline: 7vw;
-}
-
 .hero-text {
   display: flex;
   gap: 5vw;
-  margin-block: 2vh 25vh;
-  color: #2b2c2e;
+  align-items: flex-start;
+  margin-block: 2vw 15vw;
+  color: var(--impact-color);
 }
 
 .hero-text p {
   line-height: 2rem;
   width: 54vw;
+  font-family: "Graphik Medium";
+  font-size: 1.3rem;
 }
 
-.hero-text article span {
-  font-size: 3.5rem;
-}
-
-.hero-text article p {
+.hero-text .price {
   width: 15vw;
   line-height: 1.3rem;
-  margin-top: 2vh;
-  color: #9fa2a7;
+  color: var(--text-color);
+  font-family: "Graphik";
+  font-size: 1.2rem;
 }
 
-/* ==== Deliverables ==== */
+.hero-text .price span {
+  display: block;
+  font-size: 3.5rem;
+  margin-block: 3vh;
+  color: var(--impact-color);
+}
+
+/* ==== DELIVERABLES ==== */
 
 .deliverables {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 2vw;
 }
 
 .deliverables img {
-  width: 40vw;
+  width: max(400px, 40vw);
 }
 
-/* ===Article=== */
+/* ==== DELIVERABLES - TEXT === */
 
 .deliverables article {
   width: 42vw;
 }
 
 .deliverables article h2 {
-  line-height: 4rem;
-  margin-bottom: 8vh;
+  margin-bottom: 4vw;
 }
 
-.deliverables article h4 {
+.deliverables article h3 {
+  margin-block: 1.5vw;
+  font-family: "Graphik Medium";
   font-size: 1.4rem;
-  margin-block: 3vh;
 }
 
 .deliverables article p {
-  color: #848689;
+  font-size: 1.3rem;
   line-height: 1.7rem;
+  color: #848689;
 }
 
-/* ==== HOW IT WORKS==== */
+/* ==== HOW IT WORKS ==== */
 
-.instructions {
+.how-to {
   background: #f1f1f4 url("../img/home_how_it_works.png") right/49% no-repeat;
-  margin-top: 15vh;
+  margin-top: 15vw;
   padding: 8vh 5vw;
   font-size: 1.2rem;
   color: #848689;
 }
 
-.instructions article {
+.how-to img {
+  width: 40%;
+}
+
+.how-to article {
   margin-bottom: 2vh;
-}
-
-.instructions article ol {
-  list-style-position: outside;
-  margin-left: 2.5rem;
-  color: #848689;
-}
-
-.instructions article {
   width: 37vw;
 }
 
-.instructions img {
-  width: 40%;
+.how-to article ol {
+  list-style-position: outside;
+  margin-left: 2.5rem;
 }
-/* ==== Critique ==== */
+
+/* ==== CRITIQUE ==== */
 
 .critique {
-  margin-block: 15vh 25vh;
+  margin-block: 10vw 13vw;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.critique h2 {
   text-align: center;
 }
 
 .critique p {
-  text-align: center;
   line-height: 2rem;
   font-size: 1rem;
-  color: #9fa2a7;
+  color: var(--text-color);
 }
 
 .critique .background {
-  margin-top: 15vh;
+  margin-top: 7vw;
   width: 100vw;
 }
 
@@ -242,9 +231,11 @@ main {
 .critique article p {
   transform: translateY(-1vh);
   width: 31vw;
+  min-width: 350px;
   text-align: left;
-  font-size: 1.2rem;
   line-height: 2.4rem;
+  font-family: "Graphik Medium";
+  font-size: 1.2rem;
 }
 
 .critique article img {
@@ -254,14 +245,13 @@ main {
   top: -80px;
 }
 
-/* ====FOOTER==== */
+/* ==== FOOTER ==== */
 
 footer {
-  margin: 0 7vw;
   padding-block: 10vh 5vh;
   text-align: center;
-  border-top: 1px solid #9fa2a7;
-  color: #9fa2a7;
+  border-top: 1px solid var(--text-color);
+  color: var(--h2-color);
 }
 
 footer article {
@@ -269,10 +259,7 @@ footer article {
   justify-content: center;
   align-items: flex-end;
   margin-top: 5vh;
-}
-
-footer a {
-  color: #2b2c2e;
+  font-family: "Graphik Medium";
 }
 
 footer img {
@@ -280,58 +267,71 @@ footer img {
   text-align: left;
 }
 
+/* MEDIA QUERIES */
 @media only screen and (max-width: 768px) {
-  .instructions {
-    background-position: top;
+  .how-to {
+    background-position: 50% 5%;
     background-size: 60%;
-    padding-top: 45vh;
+    padding-top: 45vw;
   }
 
-  .instructions article,
-  .critique p,
-  .deliverables img,
+  .how-to article,
   .deliverables article {
     width: 100%;
   }
 
-  .critique article p {
-    margin-top: 6vh;
-    width: 100%;
-  }
-
-  .critique article {
-    padding-left: 0;
-  }
-
   .deliverables {
+    align-items: center;
     flex-direction: column;
   }
 
-  h2 {
+  .critique article {
+    padding: 0;
+  }
+
+  .critique article p {
+    margin-top: 6vh;
+    text-align: center;
+    width: 100%;
+  }
+
+  .critique article img {
+    position: static;
+    width: 100%;
+  }
+
+  h2,
+  .hero-text .price span {
     font-size: 3rem;
   }
 }
 
-@media only screen and (max-width: 475px) {
-  .instructions {
+@media only screen and (max-width: 500px) {
+  .how-to {
     background-size: 100%;
+    padding-top: 70vw;
   }
 
-  h2 {
+  h2,
+  .hero-text .price span {
     font-size: 2rem;
   }
 
-  h1 {
+  .hero .price {
+    font-size: 0.6rem;
+  }
+
+  .hero h1 {
     font-size: 1.5rem;
   }
 
-  .logo,
+  header .logo,
   .hero-text p {
     font-size: 1rem;
   }
 
-  .btn,
+  header .btn,
   header nav a {
-    font-size: 0.6rem;
+    font-size: 0.7rem;
   }
 }
